@@ -13,7 +13,7 @@ The Docker socket must be provided to the container as a volume at ``/var/run/do
 ``fcron`` is used to schedule this API call.
 
 #### Building
-Pull the repository and run: ``docker build -t jordancrawford/cron-container-starter``.
+Pull the repository and run: ``docker build -t jordancrawford/cron-container-starter .``.
 
 #### Running
 To run you must:
