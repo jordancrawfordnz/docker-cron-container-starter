@@ -1,6 +1,8 @@
+[View on Docker Hub](https://hub.docker.com/r/jordancrawford/cron-container-starter/)
+[View on GitHub](https://github.com/jordancrawfordnz/docker-cron-container-starter)
+---
+
 # Cron Container Starter
-## [View on Docker Hub](https://hub.docker.com/r/jordancrawford/cron-container-starter/)
-## [View on GitHub](https://github.com/jordancrawfordnz/docker-cron-container-starter)
 
 This is a simple Docker image that starts local Docker containers based on a cron schedule.
 
