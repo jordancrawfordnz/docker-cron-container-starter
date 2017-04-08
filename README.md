@@ -24,8 +24,8 @@ Pull the repository and run: ``docker build -t jordancrawford/cron-container-sta
 ## Running
 To run you must:
 
- - provide ``/var/run/docker.sock`` as a volume
- - provide your cron schedules as environment variables. These must be of the format: ``CONTAINER_<container name to start>=<cron schedule>``
+ * provide ``/var/run/docker.sock`` as a volume
+ * provide your cron schedules as environment variables. These must be of the format: ``CONTAINER_<container name to start>=<cron schedule>``
  
 ## Cron Schedules
 See the [fcron documentation](http://fcron.free.fr/doc/en/fcrontab.5.html) or [crontab-generator](http://crontab-generator.org/) for help.
