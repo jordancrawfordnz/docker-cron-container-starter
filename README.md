@@ -2,8 +2,6 @@
 
 [View on GitHub](https://github.com/jordancrawfordnz/docker-cron-container-starter)
 
-[A version for the Raspberry Pi](https://hub.docker.com/r/jordancrawford/cron-container-starter-rpi/)
-
 ---
 
 # Cron Container Starter
@@ -54,3 +52,8 @@ test:
    container_name: test
    command: 'echo On Schedule'
 ```
+
+## ARM builds
+There are automated `armhf` and `arm64` builds on the `armhf` and `arm64` tags respectively.
+
+For Raspberry Pi's, you'll want to use the `armhf` tag.
