@@ -1,0 +1,16 @@
+# This Dockerfile uses Docker Multi-Stage Builds
+# See https://docs.docker.com/engine/userguide/eng-image/multistage-build/
+# Requires Docker v17.05
+
+# Base image
+FROM arm32v7/debian:stretch
+
+# Copy scripts from upstream sillelien/tutum-cron image
+COPY --from=sillelien/tutum-cron /*.sh /
+COPY --from=sillelien/tutum-cron /etc/services.d/cron/run/ /etc/services.d/cron/run/
+
+# Copy app
+COPY run.sh /
+
+# App Command
+ENTRYPOINT [ "/run.sh" ]
