@@ -6,6 +6,8 @@ do
     sleep 1
 done
 
+echo "Reading environment variables to determine crontab configuration"
+
 # Re-setup the fcrontab file daily.
 while true
 do
@@ -19,6 +21,9 @@ do
       # Get the name and schedule of this container.
       container=$(echo $container_env | cut -c11-)
       container_schedule=${!container_env}
+
+      echo "Container name: $container"
+      echo "Container schedule: $container_schedule"
 
       # Add entry to the cron file.
 cat <<EOF >> /tmp/cron.tmp
