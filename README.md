@@ -1,7 +1,4 @@
-[View on Docker Hub](https://hub.docker.com/r/jordancrawford/cron-container-starter/)
-
-[View on GitHub](https://github.com/jordancrawfordnz/docker-cron-container-starter)
-
+**This repo is archived.** It's not being maintained and may no longer work. I recommend calling `docker start` or `docker run` from your system's crontab instead.
 ---
 
 # Cron Container Starter
